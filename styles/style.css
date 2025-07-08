@@ -1,0 +1,138 @@
+body{
+    width: 1400px;
+    height: 7335px;
+    
+}
+
+.inter-regular{
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+}
+
+.merriweather-regular{
+  font-family: "Merriweather", serif;
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-variation-settings:
+    "wdth" 100;
+}
+.new-year-banner{
+    background-image: url("../images/Banner\ Image.png");
+    background-repeat: no-repeat;
+    background-size: contain;
+    filter: opacity(0.9);
+    background-color: linear-gradient(90deg,rgb(7, 2, 17,1) ,rgb(7, 2, 17,0));
+    stroke: black;
+    border-radius: 16opx;
+    width: 1320px;
+    height: 600px;
+    margin: 50px 140px 120px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+.new-year-banner-sub-box{
+    width: 632px;
+    height: 246px;
+    text-align: center;
+}
+.new-year-banner-title{
+    font-weight: 400;
+    font-size: 32px;
+    stroke: black;
+    color: #FFFFFF;
+    
+
+}
+.new-year-banner-description{
+    font-weight: bolder;
+    font-size: 72px;
+    color: #FFFFFF;
+    stroke: black;
+}
+.sales{
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.discount-title{
+    font-weight: bold;
+    color: red;
+    font-size: 88px;
+    margin-bottom: 48px;
+}
+.discount-description{
+    font-weight: 650;
+    font-size: 22px;
+    color: red;
+}
+.discount-description2{
+    font-weight: 700;
+    font-size: 48px;
+    color: #070211;
+    margin-bottom: 48px;
+}
+.discount-image{
+    width: 802.9px;
+    height: 500px;
+    margin-bottom: 120px;
+}
+.party{
+    background-image: url(../images/Vectorrr.png);
+    width: 1320px;
+    height: 600px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-left: 100px;
+    margin-bottom: 120px;
+
+}
+.party-container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 126px;
+    
+}
+.party-title{
+    font-weight: bolder;
+    font-size: 64px;
+    color: white;
+}
+.party-description{
+    font-weight: 400;
+    font-size: 18px;
+    color: rgba(255, 255, 255, 0.8);
+}
+.party-join{
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+}
+.location{
+    display: flex;
+    justify-content: center;
+    margin-bottom: 120px;
+}
+.location-container{
+    text-align: center;
+}
+.place,.date,.time{
+    font-weight: 600;
+    font-size: 32px;
+    color: #070211;
+}
+.place-title,.date-title,.time-title{
+    color: red;
+}
+.btn-join{
+    background-color: red;
+    font-weight: bold;
+    font-size: 20px;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    padding: 16px 32px;
+}
