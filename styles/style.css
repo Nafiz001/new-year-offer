@@ -1,9 +1,35 @@
 body{
-    width: 1400px;
-    height: 7335px;
+    /* Stripes only in section area, white on left/right */
+    background:
+        linear-gradient(to right, white 0px, white 40px, transparent 40px, transparent calc(100% - 40px), white calc(100% - 40px), white 100%),
+        repeating-linear-gradient(
+            to right,
+            transparent 0px,
+            transparent 40px,
+            rgba(255,0,0,0.1) 40px,
+            rgba(255,0,0,0.1) 90px,
+            white 90px,
+            white 100px
+        );
+    background-size: 100% 100%, 1320px 100%;
+    background-position: 0 0, 40px 0;
+    background-repeat: no-repeat, repeat;
+        
     
 }
-
+main{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    /* Remove fixed left/right margins if present */
+    /* margin-left: 40px; */
+    /* margin-right: 40px; */
+    width: 100%;
+}
+section {
+    width: 100%;
+    box-sizing: border-box;
+}
 .inter-regular{
   font-family: "Inter", sans-serif;
   font-optical-sizing: auto;
@@ -27,7 +53,7 @@ body{
     border-radius: 16opx;
     width: 1320px;
     height: 600px;
-    margin: 50px 140px 120px;
+    
     display: flex;
     justify-content: center;
     align-items: flex-start;
@@ -85,7 +111,7 @@ body{
     display: flex;
     justify-content: flex-end;
     align-items: center;
-    margin-left: 100px;
+    
     margin-bottom: 120px;
 
 }
@@ -135,4 +161,161 @@ body{
     border: none;
     border-radius: 8px;
     padding: 16px 32px;
+}
+.offer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin:0 100px;
+    margin-bottom: 120px;
+}
+.offer-container{
+    display: flex;
+    justify-content: space-between;
+    gap: 75px;
+}
+.offer1-title1{
+    font-weight: 550;
+    font-size: 24px;
+    color: red;
+}
+.offer1-title2{
+    font-weight: bolder;
+    font-size: 48px;
+    color: #070211;
+}
+.offer1-description{
+    font-weight: 400;
+    font-size: 24px;
+    color: rgba(7, 2, 17,0.6);
+}
+.offer-image-container{
+    
+    padding: 49.08px;
+    border: 15px solid red;
+    border-radius: 50%;
+}
+.offer2-title{
+    font-weight: bold;
+    font-size: 48px;
+    color: red;
+}
+.offer2-description,.holiday-sale-description{
+    font-weight: 400;
+    font-size: 20px;
+    color: rgba(7, 2, 17,0.6);
+}
+.holiday{
+    display: flex;
+    justify-content: center;
+    
+    margin-bottom: 120px;
+}
+.holiday-container{
+    width: 1320px;
+    
+    
+}
+.holiday-description{
+    text-align: center;
+}
+.holiday-title{
+    font-weight: 550;
+    font-size: 24;
+    color: #070211;
+}
+.holiday-sale{
+    font-weight: bolder;
+    font-size: 72px;
+    color: #070211;
+}
+.holidays{
+    color: red;
+}
+.holiday-image{
+    width: 100%;
+    height: 100%;
+}
+.holiday-image1-container{
+    display: flex;
+    justify-content: flex-end;
+}
+.holiday-image2-container{
+    width: 100%; 
+    height: 600.07px;
+    background-image: url("../images/Rectangle\ 2.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    background-position-y: bottom;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+    
+}
+.holiday-image2{
+    width: 796px;
+    height: 600px;
+    
+    
+}
+.gift{
+   width: 1320px;
+   margin-bottom: 120px; 
+   
+}
+.gift-images-container{
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+.subscribe{
+    margin-bottom: 120px;
+}
+.subscribe-container{
+    text-align: center;
+}
+.email-input{
+    border-bottom-left-radius: 50px;
+    border-top-left-radius: 50px;
+    height: 50px;
+    width: 200px;
+    text-align: center;
+    margin-right: 5px;
+    color: rgba(7, 2, 17,0.3);
+    border: none;
+}
+.subscribe-btn{
+    border-bottom-right-radius: 50px;
+    border-top-right-radius: 50px;
+    height: 51px;
+    width: 100px;
+    text-align: center;
+    background-color: red;
+    color: white;
+    border: none;
+}
+footer{
+    max-width: 1320px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    background-color: rgba(7, 2, 17,0.6);;
+}
+.address-container{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 50px;
+}
+.contact-image{
+    vertical-align: middle;
+}
+.icons{
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+.copyright{
+    display: flex;
+    justify-content: space-between;
 }
