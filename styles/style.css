@@ -41,11 +41,10 @@ section {
 }
 .new-year-banner{
     background: 
-        linear-gradient(180deg,rgb(7, 2, 17,0.4) 0% ,rgb(7, 2, 17,0.4) 100%),
+        linear-gradient(180deg,rgb(7, 2, 17,1) 0% ,rgb(7, 2, 17,0) 100%),
         url("../images/Banner\ Image.png");
     background-repeat: no-repeat;
     background-size: cover;
-    background-blend-mode: overlay;
     border-radius: 16px;
     width: 1320px;
     height: 600px;
@@ -165,12 +164,11 @@ section {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin:0 100px;
+    
     margin-bottom: 120px;
 }
 .offer-container{
     display: flex;
-    justify-content: space-between;
     gap: 75px;
 }
 .offer1-title1{
@@ -281,8 +279,10 @@ section {
     width: 270px;
     text-align: center;
     margin-right: 5px;
-    color: rgba(7, 2, 17,0.3);
+    color: rgba(7, 2, 17);
     border: none;
+    outline: none;
+    box-shadow: 2px 2px 5px 0 black, -2px -2px 5px 0 black ;
 }
 .subscribe-btn{
     border-bottom-right-radius: 50px;
@@ -292,6 +292,7 @@ section {
     text-align: center;
     background-color: red;
     color: white;
+    box-shadow: 2px 2px 5px 0 black, -2px -2px 5px 0 black ;
     border: none;
 }
 .footer{
@@ -303,7 +304,7 @@ footer{
     margin-left: auto;
     margin-right: auto;
     width: 100%;
-    background-image: linear-gradient(180deg,rgb(29, 29, 27),white);
+    background-image: linear-gradient(90deg,rgb(7, 2, 17,1) 0% ,rgb(7, 2, 17,0) 50%,rgb(7, 2, 17,1) 100%);
 }
 .address-container{
     display: flex;
@@ -322,4 +323,5 @@ footer{
 .copyright{
     display: flex;
     justify-content: space-between;
+    color: white;
 }
